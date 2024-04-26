@@ -95,3 +95,16 @@ footer {
 .fade-in {
   animation: fadeIn 1s ease-out forwards;
 }
+
+/* CSS for styling - from ChatGPT */
+.section {
+  margin-bottom: 40px;
+  overflow: hidden;
+}
+.section img {
+  float: center;
+  
+}
+.section p {
+  margin-top: 0;
+}
