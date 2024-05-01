@@ -18,28 +18,26 @@
         <li><a href="ourwork.html">Our Work</a></li>
         <li><a href="contact.html">Contact</a></li>
         <li class="active"><a href="reviews.html">Reviews</a></li>
-
       </ul>
     </nav>
     <main>
-      <h2>Reviews</h2>
-      <p>Latest Reviews</p>
-      <table>
-        <tr>
-          <td></td>
-          <td>This site and company is cheugy AF no cap</td>
-          <td>1/5 stars</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>SHEEEEEEESH this company mid</td>
-          <td>1/5 stars</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>BIG YIKES</td>
-            <td>1/5 stars</td>
+      <div>
+        <button onclick="sortRating(true)">Sort by Rating Descending</button>
+        <button onclick="sortRating(false)">Sort by Rating Ascending</button>
+        <button onclick="sortLength(true)">Sort by Review Length Descending</button>
+        <button onclick="sortLength(false)">Sort by Review Length Ascending</button>
+    </div>
+      <table id="reviewsTable">
+        <thead>
+          <tr>
+            <th>Reviewer Name</th>
+            <th>Review</th>
+            <th>Rating</th>
           </tr>
+        </thead>
+        <tbody id="reviews-container">
+          <!-- Reviews will be inserted here by JavaScript -->
+        </tbody>
       </table>
     </main>
     <footer>
