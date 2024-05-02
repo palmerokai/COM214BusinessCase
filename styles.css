@@ -20,7 +20,7 @@ header {
 /* Body styles */
 body {
   font-family: Arial, sans-serif;
-  background-color: rgb(157, 157, 157);
+  background-color: rgb(255, 255, 255);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -29,12 +29,9 @@ body {
 
 /* Container styles */
 .container {
-  width: 80%;
-  margin: 5% auto;
-  background-color: #ffffff;
+  width: 100%;
+  background-color: #dcdcdc;
   padding: 5%;
-  border: 3px solid #000000;
-  border-radius: 20px;
   box-shadow: 0 0 2% rgba(0, 0, 0, 0.1);
   text-align: center;
 }
@@ -93,7 +90,7 @@ main h2 {
 }
 
 main p {
-  color: #666666;
+  color: #000000;
   line-height: 1.6;
 }
 
@@ -101,7 +98,7 @@ main p {
 footer {
   margin-top: 50px;
   font-size: 14px;
-  color: #666666;
+  color: #ffffff;
 }
 
 /* Animation */
