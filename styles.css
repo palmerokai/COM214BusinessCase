@@ -8,7 +8,7 @@
 /* Body styles */
 body {
   font-family: Arial, sans-serif;
-  background-color: #f7f7f7;
+  background-color: rgb(157, 157, 157);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,15 +16,16 @@ body {
 
 /* Container styles */
 .container {
-  max-width: 800px;
-  margin: 50px auto;
+  width: 80%;
+  margin: 5% auto;
   background-color: #ffffff;
-  padding: 20px;
-  border: 2px solid #000000;
+  padding: 5%;
+  border: 3px solid #000000;
   border-radius: 20px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 2% rgba(0, 0, 0, 0.1);
   text-align: center;
 }
+
 
 /* Header styles */
 header h1 {
@@ -94,4 +95,17 @@ footer {
 
 .fade-in {
   animation: fadeIn 1s ease-out forwards;
+}
+
+/* CSS for styling - from ChatGPT */
+.section {
+  margin-bottom: 40px;
+  overflow: hidden;
+}
+.section img {
+  float: center;
+  
+}
+.section p {
+  margin-top: 0;
 }
