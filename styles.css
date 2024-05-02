@@ -6,12 +6,25 @@
 }
 
 /* Body styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: rgb(32, 82, 203); /* Add a background color to ensure header visibility */
+  z-index: 1000; /* Set a high z-index value to keep header on top */
+}
+
+/* Body styles */
 body {
   font-family: Arial, sans-serif;
   background-color: rgb(157, 157, 157);
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 80px; /* Add padding to body to offset content under fixed header */
 }
 
 /* Container styles */
@@ -27,12 +40,22 @@ body {
 }
 
 
-/* Header styles */
-header h1 {
-  font-size: 36px;
-  margin-bottom: 20px;
-  color: #333333;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+
+
+.logo img {
+  max-width: 150px; /* Adjust size as needed */
+  height: auto;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin-right: 15px;
 }
 
 /* Navigation styles */
@@ -49,7 +72,7 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: #333333;
+  color: #ffffff;
   font-size: 18px;
   transition: color 0.3s ease-in-out;
 }
