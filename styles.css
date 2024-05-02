@@ -8,7 +8,7 @@
 /* Body styles */
 body {
   font-family: Arial, sans-serif;
-  background-color: #f7f7f7;
+  background-color: rgb(157, 157, 157);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,6 +25,7 @@ body {
   box-shadow: 0 0 2% rgba(0, 0, 0, 0.1);
   text-align: center;
 }
+
 
 /* Header styles */
 header h1 {
