@@ -261,7 +261,7 @@ footer {
 /* Main container styling */
 .contact-form-container {
   width: 50%;
-  margin: 0 auto;
+  margin: 20px auto;
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 10px; /* Rounded corners */
