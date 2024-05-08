@@ -24,15 +24,26 @@
         </ul>
       </nav>
     </header>
+    
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="ourwork.html">Our Work</a></li>
+        <li class="active"><a href="reviews.html">Reviews</a></li>
+      </ul>
+    </nav>
 
-    <div class="container">
     <main>
-      <div>
-        <button onclick="sortRating(true)">Sort by Rating Descending</button>
-        <button onclick="sortRating(false)">Sort by Rating Ascending</button>
-        <button onclick="sortLength(true)">Sort by Review Length Descending</button>
-        <button onclick="sortLength(false)">Sort by Review Length Ascending</button>
-    </div>
+      <div class="dropdown">
+        <button class="dropbtn">Sort Reviews by...</button>
+        <div class="dropdown-content">
+          <button onclick="sortRating(true)">Rating Descending</button>
+          <button onclick="sortRating(false)">Rating Ascending</button>
+          <button onclick="sortLength(true)">Review Length Descending</button>
+          <button onclick="sortLength(false)">Review Length Ascending</button>
+        </div>
+      </div>
       <table id="reviewsTable">
         <thead>
           <tr>
@@ -48,6 +59,7 @@
     </main>
     <footer>
       <p>&copy; 2024 WebWise Consulting</p>
+      <p>&copy; Contact us: contact@shakingcrabconsult.com</p>
     </footer>
   </div>
   <script src="script.js"></script>

@@ -153,21 +153,107 @@ footer {
   width: 100%;
 }
 
-img {
-  max-width: 100%;
-  height: 100%;
-  object-fit: cover; /* Ensure image covers the entire container */
+/* Container for the dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
 }
 
-.image-container {
-  width: 45%; /* Adjust the width as needed */
-  height: 100%; /* Make it the same height as the adjacent text container */
-  float: right; /* Float it to the right to appear next to the text */
+/* Main Dropdown Button */
+.dropbtn {
+  background-color: rgb(33, 82, 203); /* Green background */
+  color: white; /* White text */
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px; /* Rounded corners */
+  font-family: 'Arial', sans-serif; /* Custom font */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.25); /* Subtle shadow */
 }
 
-.image-container img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+/* Dropdown Content (The Dropdown Menu) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 4px; /* Rounded corners for the dropdown items container */
+}
+
+/* Dropdown buttons */
+.dropdown-content button {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  background-color: #fff;
+  border: none;
+  width: 100%; /* Full width of the dropdown */
+  text-align: left;
+  border-radius: 4px; /* Rounded corners for each button */
+}
+
+.dropdown-content button:hover {
+  background-color: #f1f1f1;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change background of main button on hover */
+.dropbtn:hover {
+  background-color: #367737;
+}
+
+
+.carousel-container {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.carousel-slide {
+  display: flex;
+  transition: transform 0.75s ease;
+}
+
+.person {
+  flex: 0 0 100%;
+  text-align: center;
+  padding: 20px;
+}
+
+.person img {
+  width: 225px;
+  height: 300px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+#prevBtn,
+#nextBtn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgb(33, 82, 203);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+#prevBtn {
+  left: 0;
+}
+
+#nextBtn {
+  right: 0;
 }
 

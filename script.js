@@ -116,34 +116,24 @@ document.addEventListener("DOMContentLoaded", function() {
       .catch(error => console.error('Error loading the reviews:', error));
 });
 
-// Get the image element by its ID
-// const movingImage = document.getElementById('movingImage');
 
-// // Function to generate a random position within the window
-// function getRandomPosition() {
-//   const windowWidth = window.innerWidth;
-//   const windowHeight = window.innerHeight;
-//   const imageWidth = movingImage.clientWidth;
-//   const imageHeight = movingImage.clientHeight;
+//From chat gpt for about page
+const prevBtn = document.getElementById('prevBtn');
+const nextBtn = document.getElementById('nextBtn');
+const carouselSlide = document.querySelector('.carousel-slide');
 
-//   const maxX = windowWidth - imageWidth;
-//   const maxY = windowHeight - imageHeight;
+let counter = 0;
 
-//   const randomX = Math.floor(Math.random() * maxX);
-//   const randomY = Math.floor(Math.random() * maxY);
+nextBtn.addEventListener('click', () => {
+    counter++;
+    updateSlidePosition();
+});
 
-//   return { x: randomX, y: randomY };
-// }
+prevBtn.addEventListener('click', () => {
+    counter--;
+    updateSlidePosition();
+});
 
-// // Function to move the image to a random position
-// function moveImageRandomly() {
-//   const newPosition = getRandomPosition();
-//   movingImage.style.transform = `translate(${newPosition.x}px, ${newPosition.y}px)`;
-// }
-
-// // Call the moveImageRandomly function initially
-// moveImageRandomly();
-
-// // Set an interval to move the image randomly every few seconds (adjust the interval duration as needed)
-// setInterval(moveImageRandomly, 5000); // Move the image every 5 seconds
-
+function updateSlidePosition() {
+    carouselSlide.style.transform = `translateX(-${counter % 5 * 100}%)`;
+}
