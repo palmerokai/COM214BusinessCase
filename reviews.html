@@ -21,12 +21,15 @@
       </ul>
     </nav>
     <main>
-      <div>
-        <button onclick="sortRating(true)">Sort by Rating Descending</button>
-        <button onclick="sortRating(false)">Sort by Rating Ascending</button>
-        <button onclick="sortLength(true)">Sort by Review Length Descending</button>
-        <button onclick="sortLength(false)">Sort by Review Length Ascending</button>
-    </div>
+      <div class="dropdown">
+        <button class="dropbtn">Sort Reviews by...</button>
+        <div class="dropdown-content">
+          <button onclick="sortRating(true)">Rating Descending</button>
+          <button onclick="sortRating(false)">Rating Ascending</button>
+          <button onclick="sortLength(true)">Review Length Descending</button>
+          <button onclick="sortLength(false)">Review Length Ascending</button>
+        </div>
+      </div>
       <table id="reviewsTable">
         <thead>
           <tr>
