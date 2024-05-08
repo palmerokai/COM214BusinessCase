@@ -7,19 +7,25 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="container">
+    
     <header>
-      <h1>Shaking Crab Consulting</h1>
+      <div>
+        <div class="logo">
+          <a href="index.html"><img src="logo.png" alt="Logo"></a>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="ourwork.html">Our Work</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+        </ul>
+      </nav>
     </header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="ourwork.html">Our Work</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li class="active"><a href="reviews.html">Reviews</a></li>
-      </ul>
-    </nav>
+
+    <div class="container">
     <main>
       <div>
         <button onclick="sortRating(true)">Sort by Rating Descending</button>
