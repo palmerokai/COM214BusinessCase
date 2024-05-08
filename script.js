@@ -115,3 +115,24 @@ document.addEventListener("DOMContentLoaded", function() {
       })
       .catch(error => console.error('Error loading the reviews:', error));
 });
+
+//From chat gpt for about page
+const prevBtn = document.getElementById('prevBtn');
+const nextBtn = document.getElementById('nextBtn');
+const carouselSlide = document.querySelector('.carousel-slide');
+
+let counter = 0;
+
+nextBtn.addEventListener('click', () => {
+    counter++;
+    updateSlidePosition();
+});
+
+prevBtn.addEventListener('click', () => {
+    counter--;
+    updateSlidePosition();
+});
+
+function updateSlidePosition() {
+    carouselSlide.style.transform = `translateX(-${counter % 5 * 100}%)`;
+}
