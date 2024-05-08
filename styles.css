@@ -258,3 +258,42 @@ footer {
   right: 0;
 }
 
+/* Main container styling */
+.contact-form-container {
+  width: 50%;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 0 10px #ccc; /* Optional: adds shadow for better visibility */
+  background-color: #e6e6e6; /* Light grey background */
+}
+
+/* Form element styling */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Input fields and textarea styling */
+.input-text, .input-textarea {
+  padding: 10px;
+  margin-bottom: 10px; /* Space between elements */
+  border-radius: 5px; /* Slightly rounded edges for inputs */
+  border: 1px solid #ccc;
+  width: calc(100% - 22px); /* Full width minus padding and border */
+}
+
+/* Submit button styling */
+.submit-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color:  rgb(33, 82, 203);
+  color: white;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #45a049;
+}
