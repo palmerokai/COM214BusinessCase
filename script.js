@@ -116,6 +116,7 @@ document.addEventListener("DOMContentLoaded", function() {
       .catch(error => console.error('Error loading the reviews:', error));
 });
 
+
 //From chat gpt for about page
 const prevBtn = document.getElementById('prevBtn');
 const nextBtn = document.getElementById('nextBtn');
