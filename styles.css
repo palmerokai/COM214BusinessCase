@@ -13,7 +13,7 @@ header {
   width: 100%;
   position: fixed;
   top: 0;
-  background-color: rgb(32, 82, 203); /* Add a background color to ensure header visibility */
+  background-color: rgb(33, 82, 203); /* Add a background color to ensure header visibility */
   z-index: 1000; /* Set a high z-index value to keep header on top */
 }
 
