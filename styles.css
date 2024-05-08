@@ -133,6 +133,7 @@ footer {
 .review-image {
   width: 100%;
 }
+<<<<<<< HEAD
 /* Container for the dropdown */
 .dropdown {
   position: relative;
@@ -190,3 +191,51 @@ footer {
   background-color: #367737;
 }
 
+=======
+
+.carousel-container {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.carousel-slide {
+  display: flex;
+  transition: transform 0.75s ease;
+}
+
+.person {
+  flex: 0 0 100%;
+  text-align: center;
+  padding: 20px;
+}
+
+.person img {
+  width: 225px;
+  height: 300px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+#prevBtn,
+#nextBtn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgb(33, 82, 203);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+#prevBtn {
+  left: 0;
+}
+
+#nextBtn {
+  right: 0;
+}
+>>>>>>> d9548800cf07bcd389c88e9876d7dcecd2ad7389
