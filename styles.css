@@ -47,6 +47,7 @@ body {
   padding: 5%;
   box-shadow: 0 0 2% rgba(0, 0, 0, 0.1);
   text-align: center;
+  width: 100%;
 }
 
 .container main {
@@ -296,4 +297,12 @@ footer {
 
 .submit-button:hover {
   background-color: #45a049;
+}
+
+iframe {
+  width: 85vw;
+  height: 75vh;
+  border: none;
+  margin: 20px;
+  outline: #000000 solid;
 }
